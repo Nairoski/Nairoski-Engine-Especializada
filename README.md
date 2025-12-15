@@ -1,118 +1,121 @@
 <h1># 🛠️ Nairoski Engine</h1>
 
-Uma **engine 2D em C++**, desenvolvida do zero com **Allegro 5**, focada em aprendizado profundo de programação, arquitetura de jogos e sistemas no estilo *Factorio / sandbox*.
+A **2D engine written in C++**, built from scratch using **Allegro 5**, focused on deep learning of programming fundamentals, game engine architecture, and systems inspired by *Factorio / sandbox-style* games.
+
+> This project is not just a game — it is a laboratory for ideas, systems, and experimentation.
 
 ---
 
-## 🚀 Visão Geral
+## 🚀 Overview
 
-A **Nairoski Engine** foi criada com o objetivo de entender *como as coisas realmente funcionam* em uma engine:
+**Nairoski Engine** was created with the goal of understanding *how things actually work* inside a game engine:
 
-* Gerenciamento de entidades
-* Sistema de grid
-* Renderização manual
-* Interação entre objetos (miners, esteiras, minérios)
-* Atualização baseada em tempo (ticks)
+* Entity management
+* Grid-based systems
+* Manual rendering
+* Object interaction (miners, conveyors, ores)
+* Time-based updates (ticks)
 
-Tudo escrito **sem frameworks prontos**, apenas C++ + Allegro.
-
----
-
-## 🎮 Funcionalidades Atuais
-
-* 🧍 Player com movimentação livre
-* ⛏️ **Miners** que detectam minério natural
-* 🟫 **Minérios** naturais e gerados
-* 🔁 **Esteiras** com rotação e sentido
-* 🧱 Sistema de **grid** para posicionamento
-* 👻 Preview fantasma antes de colocar estruturas
-* 🖱️ Colocação de estruturas com o mouse
-* 🔄 Rotação de estruturas com tecla (`R`)
+Everything is written **without ready-made engines**, using only C++ + Allegro.
 
 ---
 
-## 🧠 Sistemas em Desenvolvimento
+## 🎮 Current Features
 
-* Transporte de minérios pelas esteiras
-* Interação miner → esteira
-* Sistema de chunks
-* Organização por camadas (draw order)
-* Otimizações de performance
+* 🧍 Player with free movement
+* ⛏️ **Miners** that detect natural ore
+* 🟫 **Ores** (natural and generated)
+* 🔁 **Conveyors (Esteiras)** with rotation and direction
+* 🧱 **Grid system** for placement
+* 👻 Ghost preview before placing structures
+* 🖱️ Mouse-based structure placement
+* 🔄 Structure rotation using keyboard (`R`)
 
 ---
 
-## 🧩 Estrutura do Projeto
+## 🧠 Systems in Development
+
+* Ore transportation through conveyors
+* Miner → conveyor interaction
+* Procedural map generation
+* Chunk-based world system
+* Layered rendering (draw order)
+* Performance optimizations
+
+---
+
+## 🧩 Project Structure
 
 ```txt
 Nairoski Engine/
-├── src/            # Código fonte (.cpp)
-├── include/        # Headers (.h)
-├── assets/         # Sprites e imagens
-├── build/          # Arquivos gerados
+├── src/            # Source files (.cpp)
+├── include/        # Header files (.h)
+├── assets/         # Sprites and images
+├── build/          # Generated files
 ├── .gitignore
 └── README.md
 ```
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
 * **C++**
-* **Allegro 5** (gráficos, input, eventos)
+* **Allegro 5** (graphics, input, events)
 * Git & GitHub
 
 ---
 
-## ▶️ Como Compilar
+## ▶️ How to Build
 
-### Requisitos
+### Requirements
 
-* Allegro 5 instalado
-* Compilador C++ (g++, MinGW ou MSVC)
+* Allegro 5 installed
+* C++ compiler (g++, MinGW, or MSVC)
 
-### Exemplo (MinGW):
+### Example (MinGW):
 
 ```bash
 g++ src/*.cpp -o NairoskiEngine \
 -lallegro -lallegro_image -lallegro_primitives -lallegro_dialog
 ```
 
-> Ajuste os caminhos conforme seu sistema.
+> Adjust library paths according to your system.
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🎯 Project Goals
 
-Este projeto tem foco **educacional e experimental**, com os seguintes objetivos:
+This project has an **educational and experimental focus**, aiming to:
 
-* Aprender C++ de forma sólida
-* Entender engines de jogos na prática
-* Criar sistemas reutilizáveis
-* Evoluir para projetos maiores no futuro
-
----
-
-## 📌 Status
-
-🚧 **Em desenvolvimento ativo**
-
-Mudanças frequentes, refactors e novas ideias surgem constantemente.
+* Build strong C++ fundamentals
+* Understand game engines at a low level
+* Create reusable systems
+* Evolve into larger and more complex projects
 
 ---
 
-## 👤 Autor
+## 📌 Project Status
+
+🚧 **Actively in development**
+
+Frequent changes, refactors, and new ideas are expected.
+
+---
+
+## 👤 Author
 
 **Pedro Nairoski**
-Estudante e desenvolvedor em formação
+Student and aspiring software developer
 
 ---
 
-## 📜 Licença
+## 📜 License
 
-Este projeto é open-source para fins de estudo.
+This project is open-source and intended for learning purposes.
 
-Sinta-se livre para explorar, modificar e aprender com o código.
+Feel free to explore, modify, and learn from the code.
 
 ---
 
-🔥 *Construindo do zero para entender tudo.*
+🔥 *Built from scratch to understand everything.*
